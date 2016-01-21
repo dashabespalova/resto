@@ -1,7 +1,7 @@
 body{
-font:400 14px/1.87 'Aleo', Arial, sans-serif;
-letter-spacing: 0.05em;
-color:#3b3b3b;
+	font:400 14px/1.87 'Aleo', Arial, sans-serif;
+	letter-spacing: 0.05em;
+	color:#3b3b3b;
 }
 
 /* Typography */
@@ -19,23 +19,21 @@ button,
 .ba-button{
 	display: inline-block;
 	text-decoration: none;
-	margin-top: 90px;
 	padding: 0 15px;
-	line-height: 34px;
-	min-height: 34px;
+	line-height: 32px;
+	min-height: 32px;
 	color: #b7b7b7;
 	border: 1px solid #d7d5d5;
 	font-size: 14px;
 	font-weight: 400;
 	background: none;
 	vertical-align: middle;
-
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
-
+	color: #3b3b3b;
 }
 
 input[type="text"],
@@ -66,40 +64,29 @@ textarea {
 
 /* Layout */
 .ba-grid--restmenu  + .ba-grid--restmenu  {
-    margin-top: 60px;
+	margin-top: 45px;
 }
-
-
 .ba-grid--restmenu > [class*="ba-width-"] {
-    float: left;
-    padding-left: 130px;
+	float: left;
+	padding-left: 120px;
 }
-
-
 .ba-grid--restmenu {
-    margin-left: -130px;
+	margin-left: -120px;
 }
-
-
-.ba-grid--featured > [class*="ba-width-"] {
-    float: left;
-    padding-left: 60px;
+.ba-grid--pad60 > [class*="ba-width-"] {
+	float: left;
+	padding-left: 60px;
 }
-
-
-.ba-grid--featured {
-    margin-left: -60px;
+.ba-grid--pad60 {
+	margin-left: -60px;
 }
-
-
-
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
 	max-width: 1140px;
 }
 .ba-header {
-	padding: 40px 0;
+	padding: 40px 0 34px;
 }
 .ba-logo {
 	display: inline-block;
@@ -110,8 +97,11 @@ textarea {
 }
 .ba-menu li{
 	display: inline-block;
-	margin-left:45px;
+	margin-left:41px;
 	vertical-align: middle;
+}
+.ba-menu li:hover {
+	color: #f34949;
 }
 .ba-menu li:first-child {
 	margin-left: 0;
@@ -122,9 +112,10 @@ textarea {
 	font-weight:700;
 	color:inherit;
 	font-size: 16px;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.07px;
 	position: relative;
 }
+/*.ba-porrige */
 .ba-porrige {
 	background: #2b2b2b url(../img/porridge.jpg) 50%;
 	background-size: cover;
@@ -135,14 +126,23 @@ textarea {
 }
 .ba-porrige--dark {
 	display: block;
-background-color:  rgba(43, 43, 43, 0.84);
-padding: 195px 0 210px;
+	background-color:  rgba(43, 43, 43, 0.84);
+	padding: 223px 0 205px;
 }
 .ba-porrige--dark h1 {
 	font-family: "wc_mano_negra_btaregular";
 	font-size: 100px;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	letter-spacing: -0.09em;
+	font-weight:300;
+	padding-bottom: 12px;
 }
 .ba-porrige--dark p {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
 	display: inline-block;
 	position: relative;
 }
@@ -170,15 +170,14 @@ padding: 195px 0 210px;
 	content: "The Menu";
 	display: block;
 	background-color:  #f34949;
-width: 155px;
-height: 75px;
-
-position: absolute;
-left: calc(50% - 77px);
-top: 100%;
-font-size: 20px;
-font-weight: 700;
-line-height: 63px;
+	width: 155px;
+	height: 75px;
+	position: absolute;
+	left: calc(50% - 77px);
+	top: 100%;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 63px;
 }
 .ba-porrige:after {
 	content:"";
@@ -189,139 +188,163 @@ line-height: 63px;
 	border-color: transparent transparent #FFF;
 	border-width: 12px 77px;
 	left: calc(50% - 77px);
-top: 100%;
-
+	top: 100%;
 }
 /*ba-restaurant-menu*/
 .ba-restmenu {
-	padding: 150px 0;
+	padding: 143px 0 77px;
 	text-align: center;
-z-index: 5;
-position: relative;
-}
-.ba-restmenu__cart {
-z-index: 5;
-position: relative;
 }
 .ba-restmenu__dish {
-z-index: 5;
-position: relative;
+	z-index: 2;
+	position: relative;
 }
 .ba-restmenu__title {
 	color:  #555454;
-font-size: 16px;
-padding-right: 53px;
-background-color: #FFF;
-position: relative;
-margin: 0;
-font-weight: 400;
-z-index: 5;
-}
-.ba-restmenu__title:before {
-	z-index: 5;
-position: relative;
+	font-size: 16px;
+	padding-right: 45px;
+	background-color: #FFF;
+	position: relative;
+	margin: 0;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	z-index: 2;
 }
 .ba-restmenu__dish:after {
-content: "";
+	content: "";
 	display: block;
 	position: absolute;
 	width: 423px;
 	height: 1px;
 	left: 0;
-top: 75%;
-
-background-color: #b7b7b7;
-z-index: 2;
+	top: 61%;
+	background-color: #b7b7b7;
+	z-index: 1;
 }
-
 .ba-restmenu__price {
 	color:  #555555;
-font-size: 16px;
-position: relative;
-
+	font-size: 16px;
 }
 .ba-restmenu__ingr {
 	font-size: 12px;
 	color:  #b7b7b7;
-font-weight: 300;
-font-style: italic;
-text-align: left;
+	font-weight: 300;
+	font-style: italic;
+	text-align: left;
+}
+.ba-button--restmenu {
+	margin-top: 80px;
 }
 .fa-chevron-down {
-padding-left: 10px;
-margin: 10px;
-border-left: 1px solid #d7d5d5;
+	padding-left: 5px;
+	margin: 13px;
+	border-left: 1px solid #d7d5d5;
 }
 /*ba-featured*/
-.ba-feature {
+.ba-featured {
 	padding: 100px 0;
 }
-.ba-featured__title {
+.ba-title {
 	font-weight:700;
+	font-size: 20px;
 	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	letter-spacing: 0.05em;
 }
-.ba-featured__title:after {
+.ba-title:after {
 	content: "";
 	display: block;
-	width: 20px;
+	width: 200px;
 	height: 1px;
 	position: absolute;
-	right:214px;
+	left:calc(100% + 20px);
 	top:50%;
 	background-color:  #555555;
 }
-
+.ba-featured__title-wrap {
+	position: relative;
+	margin-bottom: 55px;
+}
+.ba-featured__circle {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color:  #dcdcdc;
+	border-radius: 50%;
+}
+.ba-featured__circle--1 {
+	top:calc(50% - 5px);
+	right:60px;
+}
+.ba-featured__circle--2 {
+	background-color:  #b7b7b7;
+	top:calc(50% - 5px);
+	right:40px;
+}
+.ba-featured__circle--3 {
+	top:calc(50% - 5px);
+	right:20px;
+}
+.ba-featured__circle--4 {
+	top:calc(50% - 5px);
+	right:0;
+}
+.ba-featured__descr {
+	padding: 19px 0 2px;
+	line-height: 1;
+}
 .ba-featured__name {
 	margin: 0;
 	font-size: 16px;
 	font-weight:300;
-
 }
 .ba-featured__price {
 	font-size: 16px;
 	font-weight:300;
 }
+.ba-rating > span {
+	font-size: 16px;
+	letter-spacing: 3px;
+}
 .ba-rating--first > span:first-child:before,
 .ba-rating--first > span:nth-child(2):before,
 .ba-rating--first > span:nth-child(3):before,
 .ba-rating--first > span:nth-child(4):before {
-
-   content: "\2605";
-color:#f1df1a;
-   position: absolute;
+	content: "\2605";
+	color:#f1df1a;
+	font-size: 16px;
+	letter-spacing: 3px;
+	position: absolute;
 
 }
 .ba-rating--first > span:nth-child(5):before {
 	content: "\2605";
-color:#dedede;
-position: absolute;
+	color:#dedede;
+	position: absolute;
 }
-
 .ba-rating--second > span:first-child:before,
 .ba-rating--second > span:nth-child(2):before,
 .ba-rating--second > span:nth-child(3):before {
 
-   content: "\2605";
-color:#f1df1a;
-   position: absolute;
-
+	content: "\2605";
+	color:#f1df1a;
+	position: absolute;
 }
 .ba-rating--second > span:nth-child(4):before,
 .ba-rating--second > span:nth-child(5):before {
 	content: "\2605";
-color:#dedede;
-position: absolute;
+	color:#dedede;
+	position: absolute;
 }
-
 .ba-rating--third > span:first-child:before,
 .ba-rating--third > span:nth-child(2):before,
 .ba-rating--third > span:nth-child(3):before,
 .ba-rating--third > span:nth-child(4):before,
 .ba-rating--third > span:nth-child(5):before {
-
-   content: "\2605";
-color:#f1df1a;
-   position: absolute;
+	content: "\2605";
+	color:#f1df1a;
+	position: absolute;
 
 }
 .ba-rating--forth > span:first-child:before,
@@ -329,13 +352,68 @@ color:#f1df1a;
 .ba-rating--forth > span:nth-child(3):before,
 .ba-rating--forth > span:nth-child(4):before {
 
-   content: "\2605";
-color:#f1df1a;
-   position: absolute;
-
+	content: "\2605";
+	color:#f1df1a;
+	position: absolute;
 }
 .ba-rating--forth > span:nth-child(5):before {
 	content: "\2605";
-color:#dedede;
-position: absolute;
+	color:#dedede;
+	position: absolute;
+}
+/*ba-gallery*/
+.ba-gallery {
+	padding: 70px 0 200px;
+}
+.ba-title--gallery {
+	padding-bottom: 58px;
+}
+.ba-gallery__img {
+	display: block;
+}
+/*ba-footer*/
+.ba-footer {
+	background-color: #3b3b3b;
+	padding: 90px;
+	color:#ebebeb;
+	font-size: 16px;
+	font-weight:300;
+}
+.ba-footer__title {
+	margin: 0;
+	font-weight:300;
+	font-size: 16px;
+}
+.ba-footer__cite {
+	display: inline-block;
+}
+.ba-footer a {
+	text-decoration: none;
+	color:inherit;
+}
+.ba-footer address {
+	font-style: normal;
+}
+.ba-footer__tel {
+	font-weight:400;
+}
+.ba-footer-links {
+	font-weight:400;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ba-footer-links li {
+	padding: 0 0 7px;
+}
+.ba-footer__copywright {
+	font-size: 14px;
+}
+.ba-footer__copywright img {
+	padding-top: 10px;
+}
+.ba-footer__cite:hover,
+.ba-footer__tel:hover,
+.ba-footer-links li:hover {
+	color:#f34949;
 }
