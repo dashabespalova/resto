@@ -366,7 +366,7 @@ textarea {
 	padding: 70px 0 200px;
 }
 .ba-title--gallery {
-	padding-bottom: 58px;
+	margin-bottom: 58px;
 }
 .ba-gallery__img {
 	display: block;
